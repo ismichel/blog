@@ -1,0 +1,266 @@
+/* Multimodal Module Styles */
+
+/* Embedding visualization container */
+.embedding-viz-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Make sure SVG is responsive */
+.embedding-viz-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for uploaded image canvas */
+#uploaded-canvas {
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+/* Text input styling for descriptions */
+.text-description-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.text-description-input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Results card styling */
+.similarity-result {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.similarity-result:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.similarity-result.best-match {
+  background-color: #d4edda;
+  border: 2px solid #28a745;
+}
+
+/* Progress bar for similarity scores */
+.similarity-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.similarity-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  transition: width 0.5s ease;
+  border-radius: 10px;
+}
+
+.similarity-bar.best {
+  background: linear-gradient(90deg, #28a745 0%, #1e7e34 100%);
+}
+
+/* Tab styling to match existing design */
+.nav-tabs .nav-link {
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
+  color: #0056b3;
+}
+
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Alert boxes for information */
+.info-alert {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.warning-alert {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.danger-alert {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Button group styling */
+.btn-group .btn {
+  margin: 0;
+  border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.btn-group .btn:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+/* Loading spinner positioning */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Emphasis text (from original design) */
+.emph {
+  font-weight: 600;
+  color: #751ae3;
+}
+
+/* Code/technical text */
+code, tt {
+  background-color: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 90%;
+  color: #c7254e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #uploaded-canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .embedding-viz-container svg {
+    max-width: 100%;
+  }
+  
+  .similarity-result {
+    padding: 10px;
+  }
+}
+
+/* Ensure consistent spacing */
+.module-section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* File input styling */
+input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #ced4da;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s;
+}
+
+input[type="file"]:hover {
+  border-color: #80bdff;
+  background-color: #e9ecef;
+}
+
+/* Model load button */
+.model-load-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.model-load-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.model-load-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Score display */
+.score-display {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+/* Legend for embedding visualization */
+.embedding-legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
