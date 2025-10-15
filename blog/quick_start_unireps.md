@@ -67,7 +67,7 @@ npm start
 
 ## 🎯 Key Differences from Original
 
-| Feature | Original (E2AI) | UniReps Version |
+| Feature | Original (blog) | UniReps Version |
 |---------|----------------|-----------------|
 | **Focus** | How CLIP works | Why models converge |
 | **Models** | 1 (CLIP) | 4 (CLIP, ALIGN, BLIP, FLAVA) |
@@ -112,7 +112,7 @@ function computeRSA(embeddings1, embeddings2) {
 
 ## 🎨 Styling Tips
 
-All styles match your existing E2AI theme. If you want to customize:
+All styles match your existing blog theme. If you want to customize:
 
 ### Colors
 ```css
@@ -185,7 +185,7 @@ npm install d3
    - Post on relevant forums
    - Share on social media
 
-### For E2AI Integration
+### For blog Integration
 
 Keep both modules:
 - `/multimodal` - Educational

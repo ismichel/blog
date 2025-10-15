@@ -1,4 +1,4 @@
-# The E2AI Literacy Project: Introducing Ethical and Explainable AI to Students
+# The blog Literacy Project: Introducing Ethical and Explainable AI to Students
 
 ## Objectives
 

@@ -8,7 +8,7 @@ This version **directly addresses** the UniReps workshop focus: *"When, how and 
 
 ## 📋 What Changed from Original Module
 
-### Original Focus (E2AI)
+### Original Focus (blog)
 - ✅ How **one model** (CLIP) works
 - ✅ Educational/explainability focus  
 - ✅ Ethics and accessibility
@@ -184,7 +184,7 @@ This version **directly addresses** the UniReps workshop focus: *"When, how and 
 
 ## 📊 Comparison: Educational vs Research Focus
 
-| Aspect | E2AI Version | UniReps Version |
+| Aspect | blog Version | UniReps Version |
 |--------|-------------|-----------------|
 | **Primary Question** | How does CLIP work? | Why do models converge? |
 | **Model Count** | 1 (CLIP explained) | 4+ (compared) |
@@ -492,7 +492,7 @@ def transfer_classifier(source_model, target_model, dataset):
 
 ## 🚀 Deployment Plan
 
-### 1. Integrate into Your E2AI Project
+### 1. Integrate into Your blog Project
 - Add as separate route: `/unireps-multimodal`
 - Keep original educational module at `/multimodal`
 - Link between them with context explanation

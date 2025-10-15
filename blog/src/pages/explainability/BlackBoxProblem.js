@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Alert } from "react-bootstrap";
 import * as d3 from "d3";
-import interpretabilityVisual from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/interpretability_visual.png';
-import spectrum from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/spectrum.png';
+import interpretabilityVisual from '../../assets/images/interpretability_visual.png';
+import spectrum from '../../assets/images/spectrum.png';
 import BlackBoxGlassBoxVisual from "./BlackBoxGlassBoxVisual.js";
 
 const BlackBoxProblem = () => {

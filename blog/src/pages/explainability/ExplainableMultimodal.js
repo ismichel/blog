@@ -4,11 +4,11 @@ import BlackBoxProblem from "./BlackBoxProblem";
 import InformationFlow from "./InformationFlow";
 import AttentionFusion from "./AttentionFusion";
 import ExplanationComparison from "./ExplanationComparison";
-import spectrum from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/spectrum.png';
-import attention from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/attention.png';
-import bidirectional_cross_attention from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/bidirectional_crossmodal.png';
-import encoder from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/encoder.png';
-import audio_encoder from '/Users/ismichel/Downloads/e2ai-master/src/assets/images/audio_encoder.png';
+import spectrum from '../../assets/images/spectrum.png';
+import attention from '../../assets/images/attention.png';
+import bidirectional_cross_attention from '../../assets/images/bidirectional_crossmodal.png';
+import encoder from '../../assets/images/encoder.png';
+import audio_encoder from '../../assets/images/audio_encoder.png';
 
 const ExplainableMultimodal = () => {
   const [selectedImage, setSelectedImage] = useState("dog");

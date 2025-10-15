@@ -402,7 +402,7 @@ Track your understanding:
 You now understand the basics of multimodal AI! This is cutting-edge technology that's shaping the future of human-computer interaction.
 
 ### What's Next?
-- Explore other E2AI modules
+- Explore other blog modules
 - Work on challenge projects
 - Stay updated on AI developments
 - Think critically about AI in society

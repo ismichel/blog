@@ -1,7 +1,7 @@
 # Multimodal AI Module - Integration Guide
 
 ## Overview
-This guide explains how to integrate the new Multimodal AI module into your E2AI project. The module teaches students about CLIP-style image-text matching models.
+This guide explains how to integrate the new Multimodal AI module into your blog project. The module teaches students about CLIP-style image-text matching models.
 
 ## New Files Created
 
@@ -199,7 +199,7 @@ If you encounter issues:
 
 ## Credits
 
-Module design follows the pedagogical approach of the original E2AI project, maintaining:
+Module design follows the pedagogical approach of the original blog project, maintaining:
 - Interactive hands-on learning
 - Ethical AI considerations
 - Accessibility focus

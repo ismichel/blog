@@ -2,7 +2,7 @@
 
 ## 🎉 What We've Built
 
-A comprehensive, interactive educational module teaching students about multimodal AI (specifically CLIP-style image-text matching), following the pedagogical approach of your original E2AI project.
+A comprehensive, interactive educational module teaching students about multimodal AI (specifically CLIP-style image-text matching), following the pedagogical approach of your original blog project.
 
 ---
 
@@ -196,7 +196,7 @@ Students will be able to:
 
 ---
 
-## 🎯 Alignment with E2AI Goals
+## 🎯 Alignment with blog Goals
 
 ### Original Project Objectives ✅
 
@@ -328,7 +328,7 @@ Students will be able to:
 ## 🎓 Credits & Acknowledgments
 
 ### Built Upon
-- Original E2AI framework by Yash Shah
+- Original blog framework by Isabel Michel
 - TensorFlow.js by Google
 - MobileNet architecture
 - D3.js for visualizations

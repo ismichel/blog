@@ -12,8 +12,8 @@ function Home() {
             <span style={{color: "#fd7e14"}}>Et Toi</span> (
               <span style={{color: "#065f71"}}>French</span>: "<span style={{color: "#105e3a"}}>And You</span>")
           </div>
-          <img src="logo.png" alt="logo with letters E2AI" height="70px" className="logo-align" />
-          The <span className="title-underline">E2AI</span> Project:
+          <img src="logo.png" alt="logo with letters blog" height="70px" className="logo-align" />
+          The <span className="title-underline">blog</span> Project:
         </h1>
         <h2 className="display-5" style={{color: '#646161', padding: "0 20px"}} >
           Introducing Ethical and Explainable AI Literacy to Students
@@ -34,7 +34,7 @@ function Home() {
       </div>
       <hr style={{margin: 0}} className="border border-2 "/>
       <div className="footer">
-        Designed and Developed by <a href="https://ynshah3.github.io" className="link-offset-3 footer-link">Yash Shah</a>
+        Designed and Developed by <a href="https://ismichel.github.io" className="link-offset-3 footer-link">Isabel Michel</a>
       </div>
     </div>
   );
