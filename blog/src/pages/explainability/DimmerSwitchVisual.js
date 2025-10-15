@@ -13,35 +13,15 @@ const DimmerSwitchVisual = () => {
   const getInterpretabilityInfo = (value) => {
     if (value <= 20) {
       return {
-        level: "Completely Opaque",
-        icon: "🔒",
-        color: "#e74c3c",
-        description: "These models are essentially black boxes. They can recognize patterns and make predictions, but provide no insight into how they reach their conclusions.",
-        examples: ["Deep Neural Networks", "Ensemble Methods", "Complex Architectures"],
-        pros: ["High accuracy", "Handles complex data", "State-of-the-art performance"],
-        cons: ["No interpretability", "Cannot debug failures", "Trust issues"]
+        level: "Fully Transparent",
+        icon: "🔓",
+        color: "#4caf50",
+        description: "These models are completely interpretable. Every decision can be traced step-by-step, making them ideal for high-stakes applications where trust and accountability are crucial.",
+        examples: ["Decision Trees", "Linear Regression", "Rule-based Systems"],
+        pros: ["Complete transparency", "Easy to debug", "Regulatory compliance"],
+        cons: ["Limited complexity", "May not capture complex patterns"]
       };
     } else if (value <= 40) {
-      return {
-        level: "Mostly Opaque",
-        icon: "🧠",
-        color: "#ff9800",
-        description: "These models produce amazing results but their reasoning is largely opaque. While we can extract some insights, the full decision process remains mysterious.",
-        examples: ["Large Language Models", "Deep CNNs", "Complex Transformers"],
-        pros: ["High performance", "Some interpretability tools", "Impressive capabilities"],
-        cons: ["Limited transparency", "Hard to debug", "Black box reasoning"]
-      };
-    } else if (value <= 60) {
-      return {
-        level: "The Messy Middle",
-        icon: "🎭",
-        color: "#667eea",
-        description: "Multimodal AI systems live here. We can visualize attention maps showing which image regions correspond to which words, but mysteries remain about how they learn abstract concepts.",
-        examples: ["Multimodal Transformers", "Vision-Language Models", "Cross-modal Attention"],
-        pros: ["Visual attention maps", "Cross-modal insights", "Powerful capabilities"],
-        cons: ["Partial understanding", "Abstract concepts unclear", "Complex interactions"]
-      };
-    } else if (value <= 80) {
       return {
         level: "Mostly Transparent",
         icon: "🔍",
@@ -51,15 +31,35 @@ const DimmerSwitchVisual = () => {
         pros: ["Good balance", "Main factors visible", "Reasonable complexity"],
         cons: ["Some opacity", "Limited to simpler patterns"]
       };
+    } else if (value <= 60) {
+      return {
+        level: "The Messy Middle",
+        icon: "🎭",
+        color: "#ffd700",
+        description: "Multimodal AI systems live here. We can visualize attention maps showing which image regions correspond to which words, but mysteries remain about how they learn abstract concepts.",
+        examples: ["Multimodal Transformers", "Vision-Language Models", "Cross-modal Attention"],
+        pros: ["Visual attention maps", "Cross-modal insights", "Powerful capabilities"],
+        cons: ["Partial understanding", "Abstract concepts unclear", "Complex interactions"]
+      };
+    } else if (value <= 80) {
+      return {
+        level: "Mostly Opaque",
+        icon: "🧠",
+        color: "#ff9800",
+        description: "These models produce amazing results but their reasoning is largely opaque. While we can extract some insights, the full decision process remains mysterious.",
+        examples: ["Large Language Models", "Deep CNNs", "Complex Transformers"],
+        pros: ["High performance", "Some interpretability tools", "Impressive capabilities"],
+        cons: ["Limited transparency", "Hard to debug", "Black box reasoning"]
+      };
     } else {
       return {
-        level: "Fully Transparent",
-        icon: "🔓",
-        color: "#4caf50",
-        description: "These models are completely interpretable. Every decision can be traced step-by-step, making them ideal for high-stakes applications where trust and accountability are crucial.",
-        examples: ["Decision Trees", "Linear Regression", "Rule-based Systems"],
-        pros: ["Complete transparency", "Easy to debug", "Regulatory compliance"],
-        cons: ["Limited complexity", "May not capture complex patterns"]
+        level: "Completely Opaque",
+        icon: "🔒",
+        color: "#e74c3c",
+        description: "These models are essentially black boxes. They can recognize patterns and make predictions, but provide no insight into how they reach their conclusions.",
+        examples: ["Deep Neural Networks", "Ensemble Methods", "Complex Architectures"],
+        pros: ["High accuracy", "Handles complex data", "State-of-the-art performance"],
+        cons: ["No interpretability", "Cannot debug failures", "Trust issues"]
       };
     }
   };
@@ -82,22 +82,22 @@ const DimmerSwitchVisual = () => {
 
     gradient.append("stop")
       .attr("offset", "0%")
-      .attr("stop-color", "#1a1a1a")
+      .attr("stop-color", "#e3f2fd")
       .attr("stop-opacity", 1);
 
     gradient.append("stop")
       .attr("offset", "50%")
-      .attr("stop-color", "#667eea")
+      .attr("stop-color", "#ffd700")
       .attr("stop-opacity", 0.8);
 
     gradient.append("stop")
       .attr("offset", "100%")
-      .attr("stop-color", "#e3f2fd")
+      .attr("stop-color", "#1a1a1a")
       .attr("stop-opacity", 1);
 
     // Background spectrum bar
     svg.append("rect")
-      .attr("x", 50)
+      .attr("x", 40)
       .attr("y", 200)
       .attr("width", 700)
       .attr("height", 80)
@@ -115,49 +115,49 @@ const DimmerSwitchVisual = () => {
     feMerge.append("feMergeNode").attr("in", "coloredBlur");
     feMerge.append("feMergeNode").attr("in", "SourceGraphic");
 
-    // Models along the spectrum (opaque on left, transparent on right)
+    // Models along the spectrum (transparent on left, opaque on right)
     const models = [
       { 
-        name: "Deep CNN", 
-        pos: 10, 
-        icon: "🔮",
-        color: "#e74c3c",
-        desc: "Millions of params\ncompletely mysterious"
-      },
-      { 
-        name: "GPT-4", 
-        pos: 25, 
-        icon: "🧠",
-        color: "#ff9800",
-        desc: "Amazing results\nopaque reasoning"
-      },
-      { 
-        name: "Multimodal AI\n(The Messy Middle)", 
-        pos: 50, 
-        icon: "🎭",
-        color: "#667eea",
-        desc: "Can see attention\nbut mysteries remain",
-        special: true
-      },
-      { 
         name: "Linear\nRegression", 
-        pos: 80, 
+        pos: 10, 
         icon: "📊",
         color: "#66bb6a",
         desc: "Simple equations\neasy to interpret"
       },
       { 
         name: "Decision\nTree", 
-        pos: 90, 
+        pos: 20, 
         icon: "🌳",
         color: "#4caf50",
         desc: "Crystal clear\nevery step visible"
+      },
+      { 
+        name: "Multimodal AI\n(The Messy Middle)", 
+        pos: 50, 
+        icon: "🎭",
+        color: "#ffd700",
+        desc: "Can see attention\nbut mysteries remain",
+        special: true
+      },
+      { 
+        name: "GPT-4", 
+        pos: 75, 
+        icon: "🧠",
+        color: "#ff9800",
+        desc: "Amazing results\nopaque reasoning"
+      },
+      { 
+        name: "Deep CNN", 
+        pos: 90, 
+        icon: "🔮",
+        color: "#e74c3c",
+        desc: "Millions of params\ncompletely mysterious"
       }
     ];
 
     // Draw models
     models.forEach(model => {
-      const x = 50 + (model.pos / 100) * 700;
+      const x = 40 + (model.pos / 100) * 700;
       const isActive = Math.abs(model.pos - sliderValue) < 15;
       const isSelected = Math.abs(model.pos - sliderValue) < 5; // Only the closest model gets full animation
       const size = model.special ? 80 : (isSelected ? 70 : 50);
@@ -207,7 +207,7 @@ const DimmerSwitchVisual = () => {
           .attr("text-anchor", "middle")
           .style("font-size", model.special ? "14px" : "12px")
           .style("font-weight", model.special ? "bold" : "600")
-          .style("fill", model.special ? "#667eea" : "#333")
+          .style("fill", model.special ? "#ffd700" : "#e8eef5")
           .text(line);
       });
 
@@ -220,7 +220,7 @@ const DimmerSwitchVisual = () => {
             .attr("y", 340 + i * 14)
             .attr("text-anchor", "middle")
             .style("font-size", "11px")
-            .style("fill", "#666")
+            .style("fill", "#b0c4de")
             .text(line);
         });
       }
@@ -228,25 +228,25 @@ const DimmerSwitchVisual = () => {
 
     // Labels at ends
     svg.append("text")
-      .attr("x", 50)
+      .attr("x", 40)
       .attr("y", 180)
-      .attr("text-anchor", "middle")
-      .style("font-size", "14px")
-      .style("font-weight", "bold")
-      .style("fill", "#e74c3c")
-      .text("🔒 Opaque");
-
-    svg.append("text")
-      .attr("x", 750)
-      .attr("y", 180)
-      .attr("text-anchor", "middle")
+      .attr("text-anchor", "start")
       .style("font-size", "14px")
       .style("font-weight", "bold")
       .style("fill", "#4caf50")
       .text("🔓 Transparent");
 
+    svg.append("text")
+      .attr("x", 740)
+      .attr("y", 180)
+      .attr("text-anchor", "end")
+      .style("font-size", "14px")
+      .style("font-weight", "bold")
+      .style("fill", "#e74c3c")
+      .text("🔒 Opaque");
+
     // Slider indicator
-    const sliderX = 50 + (sliderValue / 100) * 700;
+    const sliderX = 40 + (sliderValue / 100) * 700;
     svg.append("line")
       .attr("x1", sliderX)
       .attr("y1", 195)
@@ -258,33 +258,33 @@ const DimmerSwitchVisual = () => {
       .attr("filter", "url(#glow)");
 
     // Dimmer switch visual at bottom
-    const switchG = svg.append("g").attr("transform", "translate(300, 420)");
+    const switchG = svg.append("g").attr("transform", "translate(180, 420)");
     
-    // switchG.append("rect")
-    //   .attr("x", 0)
-    //   .attr("y", 0)
-    //   .attr("width", 200)
-    //   .attr("height", 60)
-    //   .attr("rx", 30)
-    //   .attr("fill", "#f5f5f5")
-    //   .attr("stroke", "#ddd")
-    //   .attr("stroke-width", 2);
+    switchG.append("rect")
+      .attr("x", 10)
+      .attr("y", 15)
+      .attr("width", 200)
+      .attr("height", 30)
+      .attr("rx", 15)
+      .attr("fill", "#152238")
+      .attr("stroke", "#1a2b45")
+      .attr("stroke-width", 2);
 
-    // Dimmer levels with color gradient from red/orange (opaque) to green/blue (transparent)
+    // Dimmer levels with color gradient from green (transparent) to yellow to red (opaque)
     for (let i = 0; i <= 10; i++) {
       const opacity = i / 10;
       const position = i / 10; // 0 to 1
       
-      // Color interpolation from red/orange (opaque) to green/blue (transparent)
+      // Color interpolation from green (transparent) to yellow to red (opaque)
       let color;
       if (position <= 0.5) {
-        // Red to orange transition
+        // Green to yellow transition
         const t = position * 2; // 0 to 1
-        color = d3.interpolateRgb("#e74c3c", "#ff9800")(t);
+        color = d3.interpolateRgb("#4caf50", "#ffd700")(t);
       } else {
-        // Orange to green/blue transition
+        // Yellow to red transition
         const t = (position - 0.5) * 2; // 0 to 1
-        color = d3.interpolateRgb("#ff9800", "#4caf50")(t);
+        color = d3.interpolateRgb("#ffd700", "#e74c3c")(t);
       }
       
       switchG.append("circle")
@@ -307,9 +307,9 @@ const DimmerSwitchVisual = () => {
 
       <div className="dimmer-slider-container">
         <div className="dimmer-slider-label">
-          <span>🔒 Opaque</span>
-          <span>Current: {sliderValue}%</span>
           <span>🔓 Transparent</span>
+          <span>Current: {sliderValue}%</span>
+          <span>🔒 Opaque</span>
         </div>
         <input
           type="range"
