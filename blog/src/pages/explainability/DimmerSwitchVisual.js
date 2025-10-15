@@ -68,7 +68,7 @@ const DimmerSwitchVisual = () => {
     d3.select(svgRef.current).selectAll("*").remove();
 
     const width = 800;
-    const height = 500;
+    const height = 460;
     const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height);
@@ -217,7 +217,7 @@ const DimmerSwitchVisual = () => {
         descLines.forEach((line, i) => {
           g.append("text")
             .attr("x", x)
-            .attr("y", 340 + i * 14)
+            .attr("y", 360 + i * 14)
             .attr("text-anchor", "middle")
             .style("font-size", "11px")
             .style("fill", "#b0c4de")
@@ -258,17 +258,17 @@ const DimmerSwitchVisual = () => {
       .attr("filter", "url(#glow)");
 
     // Dimmer switch visual at bottom
-    const switchG = svg.append("g").attr("transform", "translate(180, 420)");
+    const switchG = svg.append("g").attr("transform", "translate(280, 400)");
     
-    switchG.append("rect")
-      .attr("x", 10)
-      .attr("y", 15)
-      .attr("width", 200)
-      .attr("height", 30)
-      .attr("rx", 15)
-      .attr("fill", "#152238")
-      .attr("stroke", "#1a2b45")
-      .attr("stroke-width", 2);
+    // switchG.append("rect")
+    //   .attr("x", 10)
+    //   .attr("y", 15)
+    //   .attr("width", 200)
+    //   .attr("height", 30)
+    //   .attr("rx", 15)
+    //   .attr("fill", "#152238")
+    //   .attr("stroke", "#1a2b45")
+    //   .attr("stroke-width", 2);
 
     // Dimmer levels with color gradient from green (transparent) to yellow to red (opaque)
     for (let i = 0; i <= 10; i++) {
@@ -331,23 +331,17 @@ const DimmerSwitchVisual = () => {
           <div className="dimmer-callout-text">
             {getInterpretabilityInfo(sliderValue).description}
           </div>
-        </div>
-      </div>
-
-      <div className="dimmer-examples">
-        <div className="dimmer-example" style={{backgroundColor: getInterpretabilityInfo(sliderValue).color + '20', borderColor: getInterpretabilityInfo(sliderValue).color}}>
-          <div className="dimmer-example-title">
-            {getInterpretabilityInfo(sliderValue).icon} {getInterpretabilityInfo(sliderValue).level}
-          </div>
-          <div className="dimmer-example-desc">
-            <strong>Examples:</strong> {getInterpretabilityInfo(sliderValue).examples.join(", ")}
-          </div>
-          <div className="dimmer-example-desc">
-            <strong>Pros:</strong> {getInterpretabilityInfo(sliderValue).pros.join(", ")}
-          </div>
-          <div className="dimmer-example-desc">
-            <strong>Cons:</strong> {getInterpretabilityInfo(sliderValue).cons.join(", ")}
-          </div>
+          <ul className="dimmer-callout-list" style={{marginTop: '15px'}}>
+            <li>
+              <strong>Examples:</strong> {getInterpretabilityInfo(sliderValue).examples.join(", ")}
+            </li>
+            <li>
+              <strong>Pros:</strong> {getInterpretabilityInfo(sliderValue).pros.join(", ")}
+            </li>
+            <li>
+              <strong>Cons:</strong> {getInterpretabilityInfo(sliderValue).cons.join(", ")}
+            </li>
+          </ul>
         </div>
       </div>
     </div>

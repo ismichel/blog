@@ -4,7 +4,7 @@
     background: #0a1628;
     border: 1px solid #1a2b45;
     border-radius: 12px;
-    padding: 60px 40px;
+    padding: 30px 40px;
     margin: 60px auto;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
@@ -23,7 +23,7 @@
     font-size: 18px;
     color: #b0c4de;
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: -10px;
     font-style: italic;
 }
 
@@ -66,8 +66,8 @@
 
 /* Slider */
 .dimmer-slider-container {
-    margin-top: 50px;
-    padding: 30px;
+    margin-top: 30px;
+    padding: 15px;
     background: #152238;
     border-radius: 12px;
     border: 1px solid #1a2b45;
@@ -149,13 +149,15 @@
 .dimmer-callout {
     display: flex;
     gap: 24px;
-    align-items: center;
-    margin-top: 50px;
+    align-items: flex-start;
+    margin-top: 20px;
     padding: 40px;
     background: #152238;
     border-left: 4px solid #ffd700;
     border-radius: 8px;
     border: 1px solid #1a2b45;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .dimmer-callout-icon {
@@ -187,8 +189,19 @@
 }
 
 .dimmer-callout-text strong {
-    color: #ffd700;
+    color: #e8eef5;
     font-weight: 600;
+}
+
+.dimmer-callout-list {
+    margin: 8px 0 0 20px;
+    padding: 0;
+    color: #b0c4de;
+}
+
+.dimmer-callout-list li {
+    margin: 5px 0;
+    line-height: 1.6;
 }
 
 /* Examples grid */
@@ -205,6 +218,8 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    background: #152238;
+    border: 1px solid #1a2b45;
 }
 
 .dimmer-example:hover {
@@ -212,49 +227,28 @@
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-.dimmer-example-transparent {
-    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-    border: 2px solid #4caf50;
-}
-
-.dimmer-example-middle {
-    background: linear-gradient(135deg, #e8eaf6, #c5cae9);
-    border: 2px solid #667eea;
-}
-
-.dimmer-example-opaque {
-    background: linear-gradient(135deg, #ffebee, #ffcdd2);
-    border: 2px solid #e74c3c;
-}
 
 .dimmer-example-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.dimmer-example-transparent .dimmer-example-title {
-    color: #2e7d32;
-}
-
-.dimmer-example-middle .dimmer-example-title {
-    color: #ffd700;
-}
-
-.dimmer-example-opaque .dimmer-example-title {
-    color: #c62828;
+    color: #e8eef5;
 }
 
 .dimmer-example-desc {
     font-size: 14px;
     line-height: 1.5;
-    color: #2c3e50;
+    color: #b0c4de;
 }
 
 .dimmer-example-desc em {
     font-style: italic;
-    color: #ffd700;
+    color: #e8eef5;
     font-weight: 500;
+}
+
+.dimmer-example-desc strong {
+    color: #e8eef5;
 }
 
 /* Responsive */
