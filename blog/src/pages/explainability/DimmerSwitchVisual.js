@@ -298,7 +298,7 @@ const DimmerSwitchVisual = () => {
 
   return (
     <div className="dimmer-container">
-      <div className="dimmer-title">The Explainability Spectrum</div>
+      {/* <div className="dimmer-title">The Explainability Spectrum</div> */}
       <div className="dimmer-subtitle">
         Like a dimmer switch, not an on/off button
       </div>

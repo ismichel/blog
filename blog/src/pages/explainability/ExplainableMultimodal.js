@@ -74,6 +74,18 @@ const ExplainableMultimodal = () => {
           }}>
             The Transparency Spectrum
           </h2>
+          
+          <div style={{
+            fontSize: '18px',
+            lineHeight: '1.7',
+            marginBottom: '40px',
+            color: '#444'
+          }}>
+            <p style={{ marginBottom: '24px' }}>
+              Think of AI explainability like a dimmer switch rather than an on/off button. At one end, you've got completely opaque systems—those mysterious deep learning models that somehow recognize cats in videos but can't tell you why. At the other end, there are simple decision trees where every choice is crystal clear.
+
+            </p>
+          </div>
 
           <img 
               src={spectrum}
@@ -92,18 +104,6 @@ const ExplainableMultimodal = () => {
                 console.log("Image loaded successfully!");
               }}
             />
-          
-          <div style={{
-            fontSize: '18px',
-            lineHeight: '1.7',
-            marginBottom: '40px',
-            color: '#444'
-          }}>
-            <p style={{ marginBottom: '24px' }}>
-              Think of AI explainability like a dimmer switch rather than an on/off button. At one end, you've got completely opaque systems—those mysterious deep learning models that somehow recognize cats in videos but can't tell you why. At the other end, there are simple decision trees where every choice is crystal clear.
-
-            </p>
-          </div>
           
           <DimmerSwitchVisual />
           
