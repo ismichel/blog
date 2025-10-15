@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/blog/static/css/main.224fa091.css",
+    "main.js": "/blog/static/js/main.0dd92edc.js",
+    "static/media/bidirectional_crossmodal.png": "/blog/static/media/bidirectional_crossmodal.f63ad02b610fc7788058.png",
+    "static/media/attention.png": "/blog/static/media/attention.6ce07e75cf58095cd1ba.png",
+    "static/media/interpretability_visual.png": "/blog/static/media/interpretability_visual.17e0727f3b54b2bf905e.png",
+    "static/media/spectrum.png": "/blog/static/media/spectrum.e8b9d2273585b2eeec19.png",
+    "static/media/encoder.png": "/blog/static/media/encoder.4b53ebdeddf362e4647a.png",
+    "static/media/audio_encoder.png": "/blog/static/media/audio_encoder.5f434a6cc21203a6924a.png",
+    "index.html": "/blog/index.html",
+    "main.224fa091.css.map": "/blog/static/css/main.224fa091.css.map",
+    "main.0dd92edc.js.map": "/blog/static/js/main.0dd92edc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.224fa091.css",
+    "static/js/main.0dd92edc.js"
+  ]
+}
