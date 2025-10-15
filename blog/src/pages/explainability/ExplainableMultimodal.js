@@ -63,9 +63,21 @@ const ExplainableMultimodal = () => {
       </header>
       
       {/* Main Content */}
-      <img 
+      <article style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <section style={{ marginBottom: '60px' }}>
+          <h2 style={{
+            fontSize: '32px',
+            fontWeight: '400',
+            color: '#2c3e50',
+            marginBottom: '30px',
+            letterSpacing: '-0.01em'
+          }}>
+            The Transparency Spectrum
+          </h2>
+
+          <img 
               src={spectrum}
-              alt="Interpretability Visual"
+              alt="Model Complexity Spectrum"
               style={{
                 maxWidth: "100%",
                 height: "auto",
@@ -80,17 +92,6 @@ const ExplainableMultimodal = () => {
                 console.log("Image loaded successfully!");
               }}
             />
-      <article style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <section style={{ marginBottom: '60px' }}>
-          <h2 style={{
-            fontSize: '32px',
-            fontWeight: '400',
-            color: '#2c3e50',
-            marginBottom: '30px',
-            letterSpacing: '-0.01em'
-          }}>
-            The Transparency Spectrum
-          </h2>
           
           <div style={{
             fontSize: '18px',
