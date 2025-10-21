@@ -693,7 +693,7 @@ const ExplainableMultimodalUpdated = () => {
             marginBottom: '30px',
             letterSpacing: '-0.01em'
           }}>
-            Cross-Model Similarity and Alignment: The UniReps Question
+            Cross-Model Similarity and Alignment: ""
           </h2>
 
           <p style={{ fontSize: '18px', lineHeight: '1.8', marginBottom: '24px' }}>
