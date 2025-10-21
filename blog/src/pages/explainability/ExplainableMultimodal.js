@@ -52,7 +52,7 @@ const ExplainableMultimodal = () => {
           marginBottom: '30px',
           fontStyle: 'italic'
         }}>
-          From Black Box to Glass Box
+          ""
         </p>
         <div style={{
           width: '60px',

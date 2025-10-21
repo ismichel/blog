@@ -11,7 +11,7 @@ function Home() {
           <Link to='multimodal' className="link-offset-3 module-link">Multimodal AI: Image-Text Matching</Link>
           <Link to='unireps' className="link-offset-3 module-link">Universal Representations (UniReps)</Link>
           <Link to='explainability' className="link-offset-3 module-link">  {/* ← ADD THIS */}
-    Explainable Multimodal AI: From Black Box to Glass Box
+    Explainable Multimodal AI: ""
   </Link>
         </div>
       </div>

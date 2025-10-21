@@ -4,7 +4,7 @@ import './BlackBoxGlassBoxVisual.css';
 const BlackBoxGlassBoxVisual = () => {
   return (
     <div className="bb-container">
-      <div className="bb-title">From Black Box to Glass Box</div>
+      <div className="bb-title">""</div>
       
       <div className="bb-comparison">
         {/* Black Box */}
