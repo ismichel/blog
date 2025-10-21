@@ -5,7 +5,7 @@ import Home from "./pages/home"
 import CNN from "./pages/CNN"
 import Multimodal from "./pages/multimodal/Multimodal"
 import UniReps from "./pages/unireps/UniReps"
-import ExplainableMultimodal from "./pages/explainability/ExplainableMultimodal"  
+import MedicalMultimodal from "./pages/explainability/MedicalMultimodal"  
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/cnn" element={<CNN />} />
         <Route path="/multimodal" element={<Multimodal />} />
         <Route path="/unireps" element={<UniReps />} />
-        <Route path="/explainability" element={<ExplainableMultimodal />} />  {/* */}
+        <Route path="/explainability" element={<MedicalMultimodal />} />  {/* */}
       </Routes>
     </div>
   );
