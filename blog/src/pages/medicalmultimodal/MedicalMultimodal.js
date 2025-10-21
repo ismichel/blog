@@ -38,7 +38,7 @@ const ExplainableMultimodalUpdated = () => {
           letterSpacing: '-0.02em',
           lineHeight: '1.2'
         }}>
-          "" Explainability as a Lens on Multimodal Representation Learning
+          Explainability as a Lens on Multimodal Representation Learning
         </h1>
         <p style={{
           fontSize: '24px',
