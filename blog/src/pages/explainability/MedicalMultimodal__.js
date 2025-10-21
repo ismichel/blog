@@ -33,7 +33,7 @@ const MedicalMultimodalComplete = () => {
           letterSpacing: '-0.02em',
           lineHeight: '1.2'
         }}>
-          From Black Box to Glass Box: Understanding Multimodal Medical AI
+          "" Understanding Multimodal Medical AI
         </h1>
         <p style={{
           fontSize: '24px',
@@ -1049,7 +1049,7 @@ const MedicalMultimodalComplete = () => {
           fontSize: '14px',
           color: '#999'
         }}>
-          From Black Box to Glass Box: Understanding Multimodal Medical AI
+          "" Understanding Multimodal Medical AI
         </p>
       </footer>
     </div>
